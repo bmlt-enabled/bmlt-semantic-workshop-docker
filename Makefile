@@ -1,5 +1,5 @@
 .PHONY: build run push
-IMAGE=radius314/bmlt-semantic-workshop:1.3.2
+IMAGE=radius314/bmlt-semantic-workshop:1.3.3
 
 build:
 	docker build . -t $(IMAGE)

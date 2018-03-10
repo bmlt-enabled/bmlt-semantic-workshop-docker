@@ -1,11 +1,11 @@
 FROM ubuntu:16.04
 
 RUN apt-get update \
-  && apt-get install -yqq apache2 php libapache2-mod-php git
+  && apt-get install -yqq apache2 php libapache2-mod-php git php-dom
 
 WORKDIR /opt
 
-ARG BMLT_SEMANTIC_WORKSHOP_VERSION=1.3.2
+ARG BMLT_SEMANTIC_WORKSHOP_VERSION=1.3.3
 
 RUN git clone https://bitbucket.org/bmlt/bmlt-semantic-workshop.git \
   && cd bmlt-semantic-workshop \
